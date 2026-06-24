@@ -216,7 +216,7 @@ export default function Page() {
         setLoading(false);
       })
       .catch((err) => {
-        setError("Gagal konek ke server. Pastikan Django berjalan di port 8000.");
+        setError("Gagal konek ke server. Periksa koneksi ke API backend.");
         setLoading(false);
         console.error(err);
       });
