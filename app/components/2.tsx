@@ -7,9 +7,6 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   const pathname = usePathname();
 
-  if (pathname != "/login") {
-    import("../globals.css");
-  }
   if (pathname === "/login") return null;
 
   return (
